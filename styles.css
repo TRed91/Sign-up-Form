@@ -52,3 +52,51 @@
     --input-border-default: #E5E7EB;
     --input-border-invalid: #944d4d;
 }
+
+body {
+    display: flex;
+}
+
+.hero-image {
+    width: 40vw;
+    text-align: center;
+}
+
+.title-text {
+  margin-top: 25vh;
+  background-color: rgba(0, 0, 0, 0.217);
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.content-side {
+  width: 60vw;
+}
+
+.content-side > div {
+  padding: 20px;
+}
+
+.header {
+  height: 40vh;
+}
+
+.form-container {
+  height: 30vh;
+}
+
+.button-container {
+  height: 30vh;
+}
+form > div {
+  display: flex;
+  gap: 50px;
+}
+
+form > div > div {
+  margin-top: 10px;
+}
+form > div > div > label{
+  display: block;
+}
