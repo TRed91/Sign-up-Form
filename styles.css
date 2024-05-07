@@ -83,8 +83,8 @@ body {
 
 .title-text {
   margin-top: 15vh;
-  background-color: rgba(0, 0, 0, 0.217);
-  padding: 30px 10px;
+  background-color: rgba(0, 0, 0, 0.353);
+  padding: 10px;
   font-size: 40px;
   font-family: "Custom-Font";
   color: white;
@@ -97,7 +97,7 @@ body {
 }
 
 .image-credit {
-  margin-top: 55vh;
+  margin-top: 50vh;
   color: #E5E7EB;
   text-align: center;
   font-size: 12px;
@@ -122,6 +122,7 @@ body {
 
 .header {
   height: 34vh;
+  min-height: 300px;
 }
 .header-text{
   margin-top: 100px;
@@ -141,6 +142,7 @@ body {
 }
 .form-container {
   height: 33vh;
+  min-height: 250px;
   background-color: var(--background-color-form);
   position: relative;
   z-index: 10;
