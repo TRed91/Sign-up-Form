@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="hero-image">
@@ -48,17 +49,18 @@
                 <div class="input-line3">
                     <div class="pwd-container">
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" name="pwd" minlength="8" class="pwd">
+                        <input type="password" id="pwd" name="pwd" minlength="8" class="pwd" required>
+                        <span class="pwd-alert">Please type in password.</span>
                     </div>
                     <div class="cpwd-container">
                         <label for="cpwd">CONFIRM PASSWORD</label>
-                        <input type="password" id="cpwd" name="cpwd" minlength="8" class="cpwd">
+                        <input type="password" id="cpwd" name="cpwd" minlength="8" class="cpwd" required>
                     </div>
                 </div>
             </form>
         </div>
         <div class="button-container">
-            <button type="submit" form="sign-up-form">Create Account</button>
+            <button type="submit" form="sign-up-form" class="submit-btn">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </div>
