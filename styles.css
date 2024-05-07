@@ -50,45 +50,99 @@
 :root {
     --button-color: #596D48;
     --input-border-default: #E5E7EB;
-    --input-border-invalid: #944d4d;
+    --input-border-invalid: #f25454;
+    --background-color-1: #f2f2f2;
+    --background-color-form: #f9f9f9;
+    --default-shadow: 0px 2px 5px rgba(0, 0, 0, 0.132);
 }
 
 body {
     display: flex;
+    width: 80vw;
+    margin-left: 10vw;
+    background-color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .hero-image {
     width: 40vw;
+    height: 100vh;
     text-align: center;
+    background: url(jan-kopriva-EPLrqHHu2WI-unsplash.jpg);
+    background-size: cover;
 }
 
 .title-text {
-  margin-top: 25vh;
+  margin-top: 15vh;
   background-color: rgba(0, 0, 0, 0.217);
-  padding: 10px;
-  font-size: 20px;
+  padding: 30px 10px;
+  font-size: 30px;
   color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.image-credit {
+  margin-top: 55vh;
+  color: #E5E7EB;
+  text-align: center;
+  font-size: 12px;
+}
+
+.title-text h1 {
+  margin-top: 25px;
+}
+
+.title-text img {
+  height: 5em;
 }
 
 .content-side {
   width: 60vw;
+  min-width: 515px;
 }
 
 .content-side > div {
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .header {
-  height: 40vh;
+  height: 34vh;
+}
+.header-text{
+  margin-top: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  min-width: 400px;
+  line-height: 1.1em;
 }
 
+.header, .button-container {
+  background-color: var(--background-color-1);
+}
+
+.header-text p {
+  padding-top: 20px;
+}
 .form-container {
-  height: 30vh;
+  height: 33vh;
+  background-color: var(--background-color-form);
+  position: relative;
+  z-index: 10;
+  box-shadow: var(--default-shadow);
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .button-container {
-  height: 30vh;
+  height: 33vh;
 }
+
 form > div {
   display: flex;
   gap: 50px;
@@ -96,7 +150,58 @@ form > div {
 
 form > div > div {
   margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0px;
 }
+
+input {
+  height: 20px;
+  width: 200px;
+  flex: 1;
+  border: 1px solid var(--input-border-default);
+  border-radius: 2px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+input:focus {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.219);
+}
+
+input:invalid {
+  border: 1px solid var(--input-border-invalid);
+}
+
 form > div > div > label{
   display: block;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+button {
+  background-color: var(--button-color);
+  color: var(--background-color-1);
+  font-weight: bold;
+  padding: 7px 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: var(--default-shadow);
+}
+
+.button-container p {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+a {
+  font-weight: 2000;
+  color: var(--button-color);
+  text-decoration: none;
 }
